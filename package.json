@@ -1,8 +1,8 @@
 {
-  "name": "next-firebase-starter",
+  "name": "stack-overflow-project",
   "private": true,
   "version": "1.0.0",
-  "author": "Trinity Christiana",
+  "author": "Danny Villalobos",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
