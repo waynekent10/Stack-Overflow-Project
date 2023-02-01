@@ -1,0 +1,37 @@
+{
+  "-NMxySatdXKc9rbXgipf": {
+    "tag": "html",
+    "description": "Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.",
+    "firebaseKey": "-NMxySatdXKc9rbXgipf",
+    "uid": null,
+    "submit_time": "10:00 AM"
+  },
+  "-NMxySaw4AjT6CZU10BR": {
+    "tag": "css",
+    "description": "Cascading Style Sheets (CSS) is a stylesheet language used for describing the look and formatting of a document written in HTML.",
+    "firebaseKey": "-NMxySaw4AjT6CZU10BR",
+    "uid": null,
+    "submit_time": "11:00 AM"
+  },
+  "-NMxySaypYwiE-oj_MxH": {
+    "tag": "react",
+    "description": "React is a JavaScript library for building user interfaces. It was developed by Facebook and is maintained by Facebook and the React community.",
+    "firebaseKey": "-NMxySaypYwiE-oj_MxH",
+    "uid": null,
+    "submit_time": "12:00 PM"
+  },
+  "-NMxySb0y64CYUP1A6OY": {
+    "tag": "vanilla js",
+    "description": "Vanilla JavaScript refers to plain JavaScript without any additional libraries or frameworks.",
+    "firebaseKey": "-NMxySb0y64CYUP1A6OY",
+    "uid": null,
+    "submit_time": "1:00 PM"
+  },
+  "-NMxySb2lmWDib94Fnw0": {
+    "tag": "html",
+    "description": "Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.",
+    "firebaseKey": "-NMxySb2lmWDib94Fnw0",
+    "uid": null,
+    "submit_time": "2:00 PM"
+  }
+}
