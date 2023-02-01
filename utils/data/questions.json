@@ -1,0 +1,36 @@
+{
+"-NMxxrCza-lm4-y8dcpl" : {
+  "question":"If there is a Unique topological ordering in a dag then there exists a hamiltonian path?",
+  "firebaseKey":"-NMxxrCza-lm4-y8dcpl",
+  "uid":null,
+  "submit_time":"3:00"
+},
+
+"-NMxxrD0pkHtqvpHiZOR":{
+  "question":"I would like to add a new column to existing dataframe.Is there any way to get this done without looping over all the rows? ",
+"firebaseKey":"-NMxxrD0pkHtqvpHiZOR",
+"uid":null,
+"submit_time":"4:00"
+},
+
+"-NMxxrD1LBVmcfiaqIUW":{
+  "question":"I want an excel formula to do vlookup multiple times based on the Vlookup results it got for each Vlookup",
+  "firebaseKey":"-NMxxrD1LBVmcfiaqIUW",
+  "uid":null,
+  "submit_time":"5:00"
+},
+
+"-NMxxrD33vjdy_QHUSMw":{
+  "question":"Android Studio Kotlin Class doesn't find resources",
+  "firebaseKey":"-NMxxrD33vjdy_QHUSMw",
+  "uid":null,
+  "submit_time":"6:00"
+},
+
+"-NMxxrD4JTB37Ho5Mr5o":{
+  "question":"What should I set as property value for columns, defined as 'AUTOINCREMENT' or 'TIMESTAMP', when using sqflite package?",
+  "firebaseKey":"-NMxxrD4JTB37Ho5Mr5o",
+  "uid":null,
+  "submit_time":"7:00"
+}
+}
