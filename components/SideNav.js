@@ -6,9 +6,9 @@ export default function SideNav() {
     <Nav defaultActiveKey="/home" className="flex-column">
       <Nav.Link href="/">Home</Nav.Link>
       <Nav.Link href="/question">Questions</Nav.Link>
-      <Nav.Link href="tag">Tags</Nav.Link>
-      <Nav.Link href="user">Users</Nav.Link>
-      <Nav.Link href="company">Companies</Nav.Link>
+      <Nav.Link href="/tag">Tags</Nav.Link>
+      <Nav.Link href="/user">Users</Nav.Link>
+      <Nav.Link href="/company">Companies</Nav.Link>
     </Nav>
   );
 }
