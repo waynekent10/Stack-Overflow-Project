@@ -4,22 +4,23 @@ import { Nav } from 'react-bootstrap';
 
 export default function SideNav() {
   return (
-    <Nav defaultActiveKey="/home" className="flex-column">
-      <Link passHref href="/">
-        <Nav.Link>Home</Nav.Link>
-      </Link>
-      <Link passHref href="/question">
-        <Nav.Link>Questions</Nav.Link>
-      </Link>
-      <Link passHref href="/tag">
-        <Nav.Link>Tags</Nav.Link>
-      </Link>
-      <Link passHref href="/user">
-        <Nav.Link>Users</Nav.Link>
-      </Link>
-      <Link passHref href="/company">
-        <Nav.Link>Companies</Nav.Link>
-      </Link>
-    </Nav>
+    <div className="sidebar" style={{ color: 'grey', paddingLeft: '20px' }}>
+      <Nav
+        defaultActiveKey="/home"
+        className="flex-column border-right shadow-right left-aligned"
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          height: '100vh',
+        }}
+      >
+        <Nav.Link class="homeLink" href="/">Home</Nav.Link>
+        <Nav.Link class="publicLink" href="/">Public</Nav.Link>
+        <Nav.Link href="/question">Questions</Nav.Link>
+        <Nav.Link href="tag">Tags</Nav.Link>
+        <Nav.Link href="user">Users</Nav.Link>
+        <Nav.Link href="company">Companies</Nav.Link>
+      </Nav>
+    </div>
   );
 }
