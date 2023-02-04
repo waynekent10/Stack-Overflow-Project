@@ -14,12 +14,18 @@ export default function SideNav() {
           height: '100vh',
         }}
       >
-        <Nav.Link class="homeLink" href="/">Home</Nav.Link>
-        <Nav.Link class="publicLink" href="/">Public</Nav.Link>
-        <Nav.Link href="/question">Questions</Nav.Link>
-        <Nav.Link href="tag">Tags</Nav.Link>
-        <Nav.Link href="user">Users</Nav.Link>
-        <Nav.Link href="company">Companies</Nav.Link>
+        <Link passHref href="/">
+          <Nav.Link>Questions</Nav.Link>
+        </Link>
+        <Link passHref href="/tag">
+          <Nav.Link>Tags</Nav.Link>
+        </Link>
+        <Link passHref href="/user">
+          <Nav.Link>Users</Nav.Link>
+        </Link>
+        <Link passHref href="/company">
+          <Nav.Link>Companies</Nav.Link>
+        </Link>
       </Nav>
     </div>
   );
