@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import { getSingleQuestion } from '../../../api/questionData';
-import QuestionForm from '../../../components/Forms/QuestionForm';
+import QuestionForm from '../../../components/forms/QuestionForm';
 
 export default function EditQuestion() {
   const [editQuestion, setEditQuestion] = useState({});

@@ -1,8 +1,7 @@
-import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
-import { Form } from 'react-bootstrap/Form';
+import { useRouter } from 'next/router';
+import { Form, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import { Button } from 'react-bootstrap/Button';
 import { createQuestion, updateQuestion } from '../../api/questionData';
 import { useAuth } from '../../utils/context/authContext';
 
