@@ -25,3 +25,23 @@ img {
   width: 175px;
   height: 40px;
 }
+
+.left-aligned {
+  float: left;
+}
+
+
+.left-aligned .nav-link:first-of-type {
+  margin-bottom: 10px;
+}
+
+.sidebar {
+  width: 185px;
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  /* padding: 16px; */
+  border-right: 1px solid #ccc;
+  color: grey;
+}
