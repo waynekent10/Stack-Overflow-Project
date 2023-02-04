@@ -1,14 +1,13 @@
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
-import { Form } from 'react-bootstrap/';
+import { Form } from 'react-bootstrap/Form';
 import PropTypes from 'prop-types';
-import { propTypes } from 'react-bootstrap/esm/Image';
-import { Button } from 'bootstrap';
+import { Button } from 'react-bootstrap/Button';
 import { createQuestion, updateQuestion } from '../../api/questionData';
 import { useAuth } from '../../utils/context/authContext';
 
 const initialState = {
-  question: '',
+  title: '',
   details: '',
   attempts: '',
   tags: '',
@@ -46,7 +45,7 @@ function QuestionForm({ obj }) {
       createQuestion(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
         updateQuestion(patchPayload).then(() => {
-          router.push('question');
+          router.push('/question');
         });
       });
     }
@@ -62,7 +61,7 @@ function QuestionForm({ obj }) {
           placeholder="Be specific and imagine you`re asking a question to another person."
           name="title"
           value={formInput.title}
-          onCHange={handleChange}
+          onChange={handleChange}
           required
         />
       </Form.Group>
@@ -74,7 +73,7 @@ function QuestionForm({ obj }) {
           placeholder="What arethe details of your problem?"
           name="details"
           value={formInput.details}
-          onCHange={handleChange}
+          onChange={handleChange}
           required
         />
       </Form.Group>
@@ -86,7 +85,7 @@ function QuestionForm({ obj }) {
           placeholder="What did you try and what were you expecting?"
           name="attempts"
           value={formInput.attempts}
-          onCHange={handleChange}
+          onChange={handleChange}
           required
         />
       </Form.Group>
@@ -98,7 +97,7 @@ function QuestionForm({ obj }) {
           placeholder="Add tags to describe what your question is about."
           name="tags"
           value={formInput.tags}
-          onCHange={handleChange}
+          onChange={handleChange}
           required
         />
       </Form.Group>
@@ -109,11 +108,11 @@ function QuestionForm({ obj }) {
 
 QuestionForm.propTypes = {
   obj: PropTypes.shape({
-    question: propTypes.string,
-    details: propTypes.string,
-    attempts: propTypes.string,
-    tags: propTypes.string,
-    firebaseKey: propTypes.string,
+    question: PropTypes.string,
+    details: PropTypes.string,
+    attempts: PropTypes.string,
+    tags: PropTypes.string,
+    firebaseKey: PropTypes.string,
   }),
 };
 
