@@ -1,46 +1,42 @@
 {
-    "-NMxxrCza-lm4-y8dcpl" : {
-    "question":"If there is a Unique topological ordering in a dag then there exists a hamiltonian path?",
-    "details": "",
-    "attempts": "",
-    "firebaseKey":"-NMxxrCza-lm4-y8dcpl",
-    "uid":null,
-    "tags": "",
-    "submit_time":"3:00"
-  },
-  "-NMxxrD0pkHtqvpHiZOR":{
-    "title":"I would like to add a new column to existing dataframe.Is there any way to get this done without looping over all the rows? ",
-    "details":"",
-    "attempts": "",
+  "-NMxxrCza-lm4-y8dcpl" : {
+  "title":"If there is a Unique topological ordering in a dag then there exists a hamiltonian path?",
+  "details": "I understand the concept that if there is no Hamiltonian path so there will be 2 smaller paths and with them I can build more then one topological",
+  "attempts": "Nothing just yet",
+  "firebaseKey":"-NMxxrCza-lm4-y8dcpl",
+  "uid":null,
+  "tags": ""
+},
+"-NMxxrD0pkHtqvpHiZOR":{
+  "title":"I would like to add a new column to existing dataframe.Is there any way to get this done without looping over all the rows? ",
+  "details":" I keep messing this up",
+  "attempts": "nothing just yet",
   "firebaseKey":"-NMxxrD0pkHtqvpHiZOR",
   "uid":null,
-  "submit_time":"4:00"
-  },
-  "-NMxxrD1LBVmcfiaqIUW":{
-    "title":"I want an excel formula to do vlookup multiple times based on the Vlookup results it got for each Vlookup",
-    "details": "",
-    "attempts": "",
-    "firebaseKey":"-NMxxrD1LBVmcfiaqIUW",
-    "uid":null,
-    "tags":"",
-    "submit_time":"5:00"
-  },
-  "-NMxxrD33vjdy_QHUSMw":{
-    "title":"Android Studio Kotlin Class doesn't find resources",
-    "details": "",
-    "attempts":"",
-    "firebaseKey":"-NMxxrD33vjdy_QHUSMw",
-    "uid":null,
-    "tags":"",
-    "submit_time":"6:00"
-  },
-  "-NMxxrD4JTB37Ho5Mr5o":{
-    "title":"What should I set as property value for columns, defined as 'AUTOINCREMENT' or 'TIMESTAMP', when using sqflite package?",
-    "details":"",
-    "attempts": "",
-    "firebaseKey":"-NMxxrD4JTB37Ho5Mr5o",
-    "uid":"",
-    "tags":"",
-    "submit_time":"7:00"
-  }
+  "tags":""
+},
+"-NMxxrD1LBVmcfiaqIUW":{
+  "title":"I want an excel formula to do vlookup multiple times based on the Vlookup results it got for each Vlookup",
+  "details": "excel is horrible",
+  "attempts": "I copied and pasted",
+  "firebaseKey":"-NMxxrD1LBVmcfiaqIUW",
+  "uid":null,
+  "tags":""
+},
+"-NMxxrD33vjdy_QHUSMw":{
+  "title":"Android Studio Kotlin Class doesn't find resources",
+  "details": "He looked",
+  "attempts":"I looked too",
+  "firebaseKey":"-NMxxrD33vjdy_QHUSMw",
+  "uid":null,
+  "tags":""
+},
+"-NMxxrD4JTB37Ho5Mr5o":{
+  "title":"What should I set as property value for columns, defined as 'AUTOINCREMENT' or 'TIMESTAMP', when using sqflite package?",
+  "details":"Timestamp is a stretch",
+  "attempts": "Autoincrement broke",
+  "firebaseKey":"-NMxxrD4JTB37Ho5Mr5o",
+  "uid":"",
+  "tags":""
+}
 }
