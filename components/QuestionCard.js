@@ -20,9 +20,6 @@ function QuestionCard({ questionObj, onUpdate }) {
   return (
 
     <Card style={{ width: '18rem' }}>
-      <Link href="/question/new" passHref>
-        <Button variant="primary" className="m-2">Ask a Question</Button>
-      </Link>
       <Card.Header>{questionDetails.title}</Card.Header>
       <ListGroup variant="flush">
         <ListGroup.Item>{questionObj.details}</ListGroup.Item>
