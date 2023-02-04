@@ -26,8 +26,6 @@ export default function SideNav() {
         <Link passHref href="/company">
           <Nav.Link>Companies</Nav.Link>
         </Link>
-        <Nav.Link href="user">Users</Nav.Link>
-        <Nav.Link href="company">Companies</Nav.Link>
       </Nav>
     </div>
   );
