@@ -36,7 +36,7 @@ export default function NavBar() {
                 aria-label="Search"
               />
             </Form>
-            <button type="button" className="btn btn-danger ml-right" style={{ float: 'right' }} onClick={signOut}>
+            <button type="button" className="btn btn-danger ml-right" id="signoutBtn" style={{ float: 'right' }} onClick={signOut}>
               Sign Out
             </button>
           </ul>

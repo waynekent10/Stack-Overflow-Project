@@ -34,6 +34,9 @@ img {
 .left-aligned .nav-link:first-of-type {
   margin-bottom: 10px;
 }
+#signoutBtn {
+  float: right !important;
+}
 
 .sidebar {
   width: 185px;
