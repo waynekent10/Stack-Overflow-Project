@@ -5,7 +5,7 @@ import QuestionCard from '../../components/QuestionCard';
 
 export default function SearchBar() {
   const [searchQuestions, setSearchQuestions] = useState([]);
-
+  // declares a state variable for search questions using the usestate hook. utilizing an empty array, the setsearch questions function is used to update the value of the searchquestions state
   const router = useRouter();
   const { searchBar } = router.query;
 
