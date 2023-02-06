@@ -29,6 +29,13 @@ export default function NavBar() {
               </Link>
             </li>
             <SearchBar />
+            <li className="nav-item">
+              <Link passHref href="/profile">
+                <a className="nav-link text-black">
+                  Profile
+                </a>
+              </Link>
+            </li>
             <button type="button" className="btn btn-danger ml-right" id="signoutBtn" style={{ float: 'right' }} onClick={signOut}>
               Sign Out
             </button>
