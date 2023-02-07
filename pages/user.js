@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 // import Link from 'next/link';
-import getUsers from '../api/userData';
+import { getUsers } from '../api/userData';
 import { useAuth } from '../utils/context/authContext';
 import UserCard from '../components/UserCard';
 
@@ -10,7 +10,7 @@ function UserPage() {
   const { user } = useAuth();
 
   const getAllTheUsers = () => {
-    getUsers(user.uid).then(setUsers);
+    getUsers().then(setUsers);
   };
 
   useEffect(() => {
