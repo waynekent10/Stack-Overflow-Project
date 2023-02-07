@@ -12,7 +12,7 @@ function QuestionCard({ questionObj, onUpdate }) {
   }, [questionObj.firebaseKey]);
 
   const deleteThisQuestion = () => {
-    if (window.confirm(`Delete ${questionObj.title}?`)) {
+    if (window.confirm('Delete this question?')) {
       deleteSingleQuestion(questionObj.firebaseKey).then(() => onUpdate());
     }
   };
@@ -31,7 +31,7 @@ function QuestionCard({ questionObj, onUpdate }) {
         <Button variant="primary" className="m-2">VIEW</Button>
       </Link>
       <Link href={`/question/edit/${questionObj.firebaseKey}`} passHref>
-        <Button variant="info">EDIT</Button>
+        <Button variant="info" className="m-2">EDIT</Button>
       </Link>
       <Button variant="danger" onClick={deleteThisQuestion} className="m-2">
         DELETE
