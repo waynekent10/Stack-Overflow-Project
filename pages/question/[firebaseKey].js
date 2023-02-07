@@ -15,7 +15,7 @@ export default function ViewQuestion() {
   }, [firebaseKey]);
 
   const deleteThisQuestion = () => {
-    if (window.confirm(`Delete ${questionDetails.title}?`)) {
+    if (window.confirm('Delete this question?')) {
       deleteSingleQuestion(questionDetails.firebaseKey).then(() => {
         router.push('/');
       });
@@ -33,7 +33,7 @@ export default function ViewQuestion() {
         <ListGroup.Item>{questionDetails.submit_time}</ListGroup.Item>
       </ListGroup>
       <Link href={`/question/edit/${questionDetails.firebaseKey}`} passHref>
-        <Button variant="info">
+        <Button variant="info" className="m-2">
           EDIT
         </Button>
       </Link>
