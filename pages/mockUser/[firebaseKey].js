@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import Image from 'react-bootstrap/Image';
+// import Image from 'react-bootstrap/Image';
+import { Card, ListGroup } from 'react-bootstrap';
+import Link from 'next/link';
 import { viewUserDetails } from '../../api/userData';
 
 export default function ViewUser() {
@@ -14,24 +16,15 @@ export default function ViewUser() {
   }, [firebaseKey]);
 
   return (
-    <>
-      <title>{userDetails.name}</title>
-      <div className="mt-5 d-flex flex-wrap">
-        <div className="d-flex flex-column" />
-        <div className="text-white ms-5 details">
-          <h5>
-            <div className="d-flex flex-column">
-              <Image src={userDetails.img_url} alt={userDetails.name} style={{ height: '200px', width: '200px' }} />
-            </div>
-            Name: {userDetails.name}
-            <br />
-            Class: {userDetails.location}
-            <br />
-            Species: {userDetails.questions_answered}
-          </h5>
-          <hr />
-        </div>
-      </div>
-    </>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={userDetails.img_url} alt={userDetails.name} style={{ height: '100px', width: '100px' }} />
+      <Link href={`/mockUser/${userDetails.firebaseKey}`} passHref>
+        <Card.Header style={{ cursor: 'pointer' }}>{userDetails.name}</Card.Header>
+      </Link>
+      <ListGroup variant="flush">
+        <ListGroup.Item>{userDetails.location}</ListGroup.Item>
+        <ListGroup.Item>{userDetails.questions_answered}</ListGroup.Item>
+      </ListGroup>
+    </Card>
   );
 }
