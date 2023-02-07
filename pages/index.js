@@ -20,7 +20,7 @@ function Home() {
   return (
     <div className="text-center my-4">
       <Link href="/question/new" passHref>
-        <Button>add a question</Button>
+        <Button>Ask a Question</Button>
       </Link>
       <div className="d-flex flex-wrap">
         {questions.map((question) => (

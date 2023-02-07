@@ -38,13 +38,13 @@ function QuestionForm({ obj }) {
     e.preventDefault();
     if (obj.firebaseKey) {
       updateQuestion(formInput)
-        .then(() => router.push('/question'));
+        .then(() => router.push('/'));
     } else {
       const payload = { ...formInput, uid: user.uid };
       createQuestion(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
         updateQuestion(patchPayload).then(() => {
-          router.push('/question');
+          router.push('/');
         });
       });
     }
@@ -69,7 +69,7 @@ function QuestionForm({ obj }) {
         <Form.Control
           label="Details"
           type="text"
-          placeholder="What arethe details of your problem?"
+          placeholder="What are the details of your problem?"
           name="details"
           value={formInput.details}
           onChange={handleChange}
