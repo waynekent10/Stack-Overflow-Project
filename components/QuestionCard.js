@@ -20,16 +20,15 @@ function QuestionCard({ questionObj, onUpdate }) {
   return (
 
     <Card style={{ width: '18rem' }}>
-      <Card.Header>{questionDetails.title}</Card.Header>
+      <Link href={`/question/${questionObj.firebaseKey}`} passHref>
+        <Card.Header style={{ cursor: 'pointer' }}>{questionDetails.title}</Card.Header>
+      </Link>
       <ListGroup variant="flush">
         <ListGroup.Item>{questionObj.details}</ListGroup.Item>
         <ListGroup.Item>{questionObj.attempts}</ListGroup.Item>
         <ListGroup.Item>{questionObj.tags}</ListGroup.Item>
         <ListGroup.Item>{questionObj.submit_time}</ListGroup.Item>
       </ListGroup>
-      <Link href={`/question/${questionObj.firebaseKey}`} passHref>
-        <Button variant="primary" className="m-2">VIEW</Button>
-      </Link>
       <Link href={`/question/edit/${questionObj.firebaseKey}`} passHref>
         <Button variant="info" className="m-2">EDIT</Button>
       </Link>
