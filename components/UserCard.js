@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Card, ListGroup } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import getUsers from '../api/userData';
+import Link from 'next/link';
+import { getUsers } from '../api/userData';
 
 function UserCard({ userObj }) {
   // const [userDetails, setUserDetails] = useState([]);
@@ -13,7 +14,9 @@ function UserCard({ userObj }) {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={userObj.img_url} alt={userObj.name} style={{ height: '100px', width: '100px' }} />
-      <Card.Header>{userObj.name}</Card.Header>
+      <Link href={`/mockUser/${userObj.firebaseKey}`} passHref>
+        <Card.Header style={{ cursor: 'pointer' }}>{userObj.name}</Card.Header>
+      </Link>
       <ListGroup variant="flush">
         <ListGroup.Item>{userObj.location}</ListGroup.Item>
         <ListGroup.Item>{userObj.questions_answered}</ListGroup.Item>
