@@ -1,10 +1,12 @@
+/* eslint-disable @next/next/link-passhref */
 import React, { useEffect, useState } from 'react';
-import { Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 import getTags from '../api/tagData';
 
 function TagCard({ tagObj }) {
-  const [tagDetails, setTagDetails] = useState([]);
+  const [, setTagDetails] = useState([]);
 
   useEffect(() => {
     getTags(tagObj.firebaseKey).then(setTagDetails);
@@ -13,7 +15,9 @@ function TagCard({ tagObj }) {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Body>
-        <Card.Link href={`/tag/${tagObj.firebaseKey}`}>{tagDetails.tag}</Card.Link>
+        <Link href={`/tag/${tagObj.firebaseKey}`}>
+          <Button variant="info">{tagObj.tag}</Button>
+        </Link>
         <Card.Text>{tagObj.description}
         </Card.Text>
       </Card.Body>

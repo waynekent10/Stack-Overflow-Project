@@ -3,8 +3,8 @@ import { clientCredentials } from '../utils/client';
 const endpoint = clientCredentials.databaseURL;
 
 // GET ALL TAGS
-const getTags = (firebaseKey) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/tags/${firebaseKey}.json`, {
+const getTags = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/tags.json`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

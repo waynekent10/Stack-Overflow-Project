@@ -13,7 +13,7 @@ export default function ViewTags() {
   };
 
   useEffect(() => {
-    getTags();
+    getAllTags();
   }, []);
 
   return (
