@@ -3,8 +3,8 @@
 import React from 'react';
 // import Image from 'next/image';
 import Link from 'next/link';
-import { Form } from 'react-bootstrap';
 import { signOut } from '../utils/auth';
+import SearchBar from './SearchBar';
 
 export default function NavBar() {
   return (
@@ -28,14 +28,14 @@ export default function NavBar() {
                 </a>
               </Link>
             </li>
-            <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="Search..."
-                className="me-2"
-                aria-label="Search"
-              />
-            </Form>
+            <SearchBar />
+            <li className="nav-item">
+              <Link passHref href="/profile">
+                <a className="nav-link text-black">
+                  Profile
+                </a>
+              </Link>
+            </li>
             <button type="button" className="btn btn-danger ml-right" id="signoutBtn" style={{ float: 'right' }} onClick={signOut}>
               Sign Out
             </button>

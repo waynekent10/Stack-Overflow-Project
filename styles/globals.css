@@ -48,3 +48,9 @@ img {
   border-right: 1px solid #ccc;
   color: grey;
 }
+
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+  }
+}
