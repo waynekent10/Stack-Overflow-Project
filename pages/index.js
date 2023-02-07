@@ -22,7 +22,7 @@ function Home() {
       <Link href="/question/new" passHref>
         <Button>Ask a Question</Button>
       </Link>
-      <div className="d-flex flex-wrap">
+      <div className="q-cards">
         {questions.map((question) => (
           <QuestionCard key={question.firebaseKey} questionObj={question} onUpdate={getAllQuestions} />
         ))}
