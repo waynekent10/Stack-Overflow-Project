@@ -74,10 +74,23 @@ const updateQuestion = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const getQuestionAnswers = (questionFirebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/question.json?orderBy="question_id"&equalTo="${questionFirebaseKey}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'applications/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(Object.values(data)))
+    .catch(reject);
+});
+
 export {
   getQuestions,
   createQuestion,
   getSingleQuestion,
   deleteSingleQuestion,
   updateQuestion,
+  getQuestionAnswers,
 };
