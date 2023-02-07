@@ -25,6 +25,7 @@ function QuestionCard({ questionObj, onUpdate }) {
         <ListGroup.Item>{questionObj.details}</ListGroup.Item>
         <ListGroup.Item>{questionObj.attempts}</ListGroup.Item>
         <ListGroup.Item>{questionObj.tags}</ListGroup.Item>
+        <ListGroup.Item>{questionObj.submit_time}</ListGroup.Item>
       </ListGroup>
       <Link href={`/question/${questionObj.firebaseKey}`} passHref>
         <Button variant="primary" className="m-2">VIEW</Button>
@@ -45,6 +46,7 @@ QuestionCard.propTypes = {
     details: PropTypes.string,
     attempts: PropTypes.string,
     tags: PropTypes.string,
+    submit_time: PropTypes.string,
     firebaseKey: PropTypes.string,
   }).isRequired,
   onUpdate: PropTypes.func.isRequired,
