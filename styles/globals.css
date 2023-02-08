@@ -33,11 +33,6 @@ img {
   display: flex;
   justify-content: flex-end;
 }
-#mb-3 {
-  display: flex;
-  justify-content: center;
-
-}
 
 .left-aligned .nav-link:first-of-type {
   margin-bottom: 10px;
