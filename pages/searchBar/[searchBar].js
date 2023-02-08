@@ -11,7 +11,7 @@ export default function SearchBar() {
 
   const searchAllQuestions = () => {
     getQuestions().then((questions) => {
-      const filteredQuestions = questions.filter((question) => question.title.toLowerCase().includes(searchBar));
+      const filteredQuestions = questions.filter((question) => question.title.toLowerCase().includes(searchBar) || question.tags.toLowerCase().includes(searchBar));
       setSearchQuestions(filteredQuestions);
     });
   };
