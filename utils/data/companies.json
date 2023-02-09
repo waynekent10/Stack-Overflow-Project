@@ -5,14 +5,16 @@
   "firebaseKey": "-NMy9TkTmfLsK0quxzmJ",
   "location": "Cupertino, CA",
   "description": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services.",
+  "website":"https://www.apple.com/newsroom/",
   "uid": ""
   },
   "-NMy9Tm6bR5RpO5SvN5j": {
   "company_name": "Microsoft Corporation",
-  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/400px-Microsoft_logo_%282012%29.svg.png",
+  "img_url": "https://static.vecteezy.com/system/resources/previews/006/892/682/original/microsoft-logo-icon-editorial-free-vector.jpg",
   "firebaseKey": "-NMy9Tm6bR5RpO5SvN5j",
   "location": "Redmond, WA",
   "description": "Microsoft Corporation is an American multinational technology company with headquarters in Redmond, Washington. It develops, licenses, and sells computer software, consumer electronics, and personal computers and services.",
+  "website":"https://www.microsoft.com/en-us/",
   "uid": ""
   },
   "-NMy9TnjH2BB3qr3vwNg": {
@@ -21,6 +23,7 @@
   "firebaseKey": "-NMy9TnjH2BB3qr3vwNg",
   "location": "Seattle, WA",
   "description": "Amazon.com, Inc. is an American multinational technology company based in Seattle, Washington, that focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+  "website":"https://www.aboutamazon.com/",
   "uid": ""
   },
   "-NMy9Tp8tDgT0pXOEEvj": {
@@ -29,6 +32,7 @@
   "firebaseKey": "-NMy9Tp8tDgT0pXOEEvj",
   "location": "Mountain View, CA",
   "description": "Alphabet Inc. is an American multinational conglomerate headquartered in Mountain View, California. It was created through a corporate restructuring of Google in 2015 and became the parent company of Google and several other companies previously owned by or tied to Google.",
+  "website":"https://abc.xyz/",
   "uid": ""
   },
   "-NMy9TrLL7gUJ4PwVtuZ": {
@@ -37,6 +41,7 @@
   "firebaseKey": "-NMy9TrLL7gUJ4PwVtuZ",
   "location": "Menlo Park, CA",
   "description": "Facebook, Inc. is an American online social media and social networking service based in Menlo Park, California. It was founded by Mark Zuckerberg, along with fellow Harvard College students and roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes.",
+  "website":"https://about.meta.com/company-info/",
   "uid": ""
   }
   }

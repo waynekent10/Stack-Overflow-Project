@@ -12,20 +12,21 @@ function CompanyCard({ companyObj }) {
   }, [companyObj.firebaseKey]);
 
   return (
-    <Card style={{ width: '200px' }}>
-      <Card.Img style={{ height: '200px', width: '200px' }} variant="top" src={companyObj.img_url} />
+    <Card className="display: flex, justify-items: flex-end" style={{ width: '75' }}>
+      <Card.Img
+        variant="top"
+        src={companyObj.img_url}
+        style={{ height: '100px', width: '100px' }}
+      />
       <Card.Body>
         <Card.Title>{companyObj.company_name}</Card.Title>
-        <Card.Text>
-          {companyObj.description}
-        </Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
-        <ListGroup.Item>{companyObj.location}</ListGroup.Item>
+        <ListGroup.Item>📍{companyObj.location}</ListGroup.Item>
+        <ListGroup.Item p class="text-center">{companyObj.description}</ListGroup.Item>
       </ListGroup>
       <Card.Body>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
+        <Card.Link href={companyObj.website}>Company Website</Card.Link>
       </Card.Body>
     </Card>
   );
@@ -36,6 +37,7 @@ CompanyCard.propTypes = {
     img_url: PropTypes.string,
     location: PropTypes.string,
     description: PropTypes.string,
+    website: PropTypes.string,
     firebaseKey: PropTypes.string,
   }).isRequired,
 };
