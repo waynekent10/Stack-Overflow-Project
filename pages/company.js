@@ -14,12 +14,11 @@ export default function ViewCompanies() {
   }, []);
 
   return (
-    <div className="text-center my-4">
-      <div className="d-flex flex-wrap">
-        {companies.map((company) => (
-          <CompanyCard key={company.firebasekey} companyObj={company} onUpdate={getAllCompanies} />
-        ))}
-      </div>
+    <div className="display: flex; justify-items: flex-end;">
+      {companies.map((company) => (
+        <CompanyCard key={company.firebasekey} companyObj={company} onUpdate={getAllCompanies} />
+      ))}
+
     </div>
   );
 }

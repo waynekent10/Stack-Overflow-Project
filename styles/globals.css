@@ -34,6 +34,11 @@ img {
   justify-content: flex-end;
 }
 
+.companycard{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .left-aligned .nav-link:first-of-type {
   margin-bottom: 10px;
 }
