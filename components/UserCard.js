@@ -15,7 +15,7 @@ function UserCard({ userObj }) {
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={userObj.img_url} alt={userObj.name} style={{ height: '100px', width: '100px' }} />
       <Link href={`/mockUser/${userObj.firebaseKey}`} passHref>
-        <Card.Header style={{ cursor: 'pointer' }}>{userObj.name}</Card.Header>
+        <div style={{ cursor: 'pointer', textAlign: 'right', marginTop: '20px' }}>{userObj.name}</div>
       </Link>
       <ListGroup variant="flush">
         <ListGroup.Item>{userObj.location}</ListGroup.Item>
