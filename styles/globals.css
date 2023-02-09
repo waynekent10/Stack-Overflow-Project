@@ -42,9 +42,6 @@ img {
 .left-aligned .nav-link:first-of-type {
   margin-bottom: 10px;
 }
-#signoutBtn {
-  float: right !important;
-}
 
 .sidebar {
   width: 185px;
@@ -61,4 +58,14 @@ img {
   .d-flex {
     flex-direction: column;
   }
+}
+
+.custom-nav {
+  display: flex;
+  flex: wrap;
+}
+
+#btnDiv {
+  float: right;
+  margin-right: 0;
 }
