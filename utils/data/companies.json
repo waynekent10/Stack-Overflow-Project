@@ -1,42 +1,42 @@
 {
   "-NMy9TkTmfLsK0quxzmJ": {
-  "Company name": "Apple Inc.",
-  "img_url": null,
+  "company_name": "Apple Inc.",
+  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Apple_Computer_Logo_rainbow.svg/340px-Apple_Computer_Logo_rainbow.svg.png",
   "firebaseKey": "-NMy9TkTmfLsK0quxzmJ",
   "location": "Cupertino, CA",
   "description": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services.",
-  "uid": null
+  "uid": ""
   },
   "-NMy9Tm6bR5RpO5SvN5j": {
-  "Company name": "Microsoft Corporation",
-  "img_url": null,
+  "company_name": "Microsoft Corporation",
+  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/400px-Microsoft_logo_%282012%29.svg.png",
   "firebaseKey": "-NMy9Tm6bR5RpO5SvN5j",
   "location": "Redmond, WA",
   "description": "Microsoft Corporation is an American multinational technology company with headquarters in Redmond, Washington. It develops, licenses, and sells computer software, consumer electronics, and personal computers and services.",
-  "uid": null
+  "uid": ""
   },
   "-NMy9TnjH2BB3qr3vwNg": {
-  "Company name": "Amazon.com, Inc.",
-  "img_url": null,
+  "company_name": "Amazon.com, Inc.",
+  "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png",
   "firebaseKey": "-NMy9TnjH2BB3qr3vwNg",
   "location": "Seattle, WA",
   "description": "Amazon.com, Inc. is an American multinational technology company based in Seattle, Washington, that focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-  "uid": null
+  "uid": ""
   },
   "-NMy9Tp8tDgT0pXOEEvj": {
-  "Company name": "Alphabet Inc.",
-  "img_url": null,
+  "company_name": "Alphabet Inc.",
+  "img_url": "https://1000logos.net/wp-content/uploads/2019/12/Alphabet-emblem.jpg",
   "firebaseKey": "-NMy9Tp8tDgT0pXOEEvj",
   "location": "Mountain View, CA",
   "description": "Alphabet Inc. is an American multinational conglomerate headquartered in Mountain View, California. It was created through a corporate restructuring of Google in 2015 and became the parent company of Google and several other companies previously owned by or tied to Google.",
-  "uid": null
+  "uid": ""
   },
   "-NMy9TrLL7gUJ4PwVtuZ": {
-  "Company name": "Facebook, Inc.",
-  "img_url": null,
+  "company name": "Facebook, Inc.",
+  "img_url": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/1200px-Facebook_f_logo_%282021%29.svg.png",
   "firebaseKey": "-NMy9TrLL7gUJ4PwVtuZ",
   "location": "Menlo Park, CA",
   "description": "Facebook, Inc. is an American online social media and social networking service based in Menlo Park, California. It was founded by Mark Zuckerberg, along with fellow Harvard College students and roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes.",
-  "uid": null
+  "uid": ""
   }
   }
