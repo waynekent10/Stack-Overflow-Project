@@ -12,10 +12,13 @@ function UserCard({ userObj }) {
   }, [userObj.firebaseKey]);
 
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{
+      width: '18rem', marginTop: '50px', marginRight: '10px', marginLeft: '10px',
+    }}
+    >
       <Card.Img variant="top" src={userObj.img_url} alt={userObj.name} style={{ height: '100px', width: '100px' }} />
       <Link href={`/mockUser/${userObj.firebaseKey}`} passHref>
-        <div style={{ cursor: 'pointer', textAlign: 'right', marginTop: '20px' }}>{userObj.name}</div>
+        <div style={{ cursor: 'pointer', textAlign: 'center', marginTop: '20px' }}>{userObj.name}</div>
       </Link>
       <ListGroup variant="flush">
         <ListGroup.Item>{userObj.location}</ListGroup.Item>

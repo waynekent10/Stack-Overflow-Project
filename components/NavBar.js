@@ -11,7 +11,7 @@ export default function NavBar() {
     <nav
       className="navbar navbar-expand-md navbar-dark bg-white container-fluid"
       style={{
-        borderBottom: '1px solid #ccc', boxShadow: '0px 0px 10px #ccc',
+        borderBottom: '1px solid #ccc', boxShadow: '0px 0px 10px #ccc', position: 'fixed', top: 0, width: '100%', height: '60px', zIndex: 500,
       }}
     >
       <div className="container-fluid d-flex align-items-center justify-content-center">
