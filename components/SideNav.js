@@ -4,7 +4,12 @@ import { Nav } from 'react-bootstrap';
 
 export default function SideNav() {
   return (
-    <div className="sidebar" style={{ color: 'grey', paddingLeft: '20px' }}>
+    <div
+      className="sidebar"
+      style={{
+        color: 'grey', paddingLeft: '20px', paddingTop: '50px',
+      }}
+    >
       <Nav
         defaultActiveKey="/home"
         className="flex-column border-right shadow-right left-aligned"
