@@ -19,7 +19,14 @@ function QuestionCard({ questionObj, onUpdate }) {
 
   return (
 
-    <Card style={{ width: '18rem' }}>
+    <Card style={{
+      width: '60rem',
+      display: 'flex',
+      justifyContent: 'flex-end',
+      paddingBottom: '20px',
+      marginBottom: '20px',
+    }}
+    >
       <Link href={`/question/${questionObj.firebaseKey}`} passHref>
         <Card.Header style={{ cursor: 'pointer' }}>{questionDetails.title}</Card.Header>
       </Link>

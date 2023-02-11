@@ -12,7 +12,14 @@ function CompanyCard({ companyObj }) {
   }, [companyObj.firebaseKey]);
 
   return (
-    <Card className="display: flex, justify-items: flex-end" style={{ width: '75' }}>
+    <Card style={{
+      width: '65rem',
+      display: 'flex',
+      justifyContent: 'flex-end',
+      marginBottom: '20px',
+      marginTop: '30px',
+    }}
+    >
       <Card.Img
         variant="top"
         src={companyObj.img_url}
