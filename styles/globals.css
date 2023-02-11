@@ -29,16 +29,13 @@ img {
 .left-aligned {
   float: left;
 }
-.q-cards {
+
+.container{
   display: flex;
   justify-content: flex-end;
-}
+  padding-top: 40px;
 
-.companycard{
-  display: flex;
-  justify-content: flex-end;
 }
-
 .left-aligned .nav-link:first-of-type {
   margin-bottom: 10px;
 }
