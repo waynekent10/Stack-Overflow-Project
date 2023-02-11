@@ -75,10 +75,10 @@ const updateQuestion = (payload) => new Promise((resolve, reject) => {
 });
 
 const getQuestionAnswers = (questionFirebaseKey) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/question.json?orderBy="question_id"&equalTo="${questionFirebaseKey}"`, {
+  fetch(`${endpoint}/answers.json?orderBy="question_id"&equalTo="${questionFirebaseKey}"`, {
     method: 'GET',
     headers: {
-      'Content-Type': 'applications/json',
+      'Content-Type': 'application/json',
     },
   })
     .then((response) => response.json())

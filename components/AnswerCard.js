@@ -7,7 +7,7 @@ import { deleteSingleAnswer, getSingleAnswer } from '../api/answerData';
 
 function AnswerCard({ answerObj }) {
   const [answerDetails, setAnswerDetails] = useState([]);
-  const router = useRouter;
+  const router = useRouter();
   const { firebaseKey } = router.query;
 
   useEffect(() => {

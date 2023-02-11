@@ -2,7 +2,9 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { Button, Card, ListGroup } from 'react-bootstrap';
-import { deleteSingleQuestion, getSingleQuestion } from '../../api/questionData';
+import viewQuestionDetails from '../../api/mergedData';
+import { deleteSingleQuestion } from '../../api/questionData';
+import AnswerCard from '../../components/AnswerCard';
 import AnswerForm from '../../components/forms/AnswerForm';
 
 export default function ViewQuestion() {
@@ -10,9 +12,12 @@ export default function ViewQuestion() {
   const router = useRouter();
 
   const { firebaseKey } = router.query;
+  const viewQuestionAnswers = () => {
+    viewQuestionDetails(firebaseKey).then(setQuestionDetails);
+  };
 
   useEffect(() => {
-    getSingleQuestion(firebaseKey).then(setQuestionDetails);
+    viewQuestionDetails(firebaseKey).then(setQuestionDetails);
   }, [firebaseKey]);
 
   const deleteThisQuestion = () => {
@@ -43,6 +48,11 @@ export default function ViewQuestion() {
             DELETE
           </Button>
         </Card>
+      </div>
+      <div className="q-cards">
+        {questionDetails.answers?.map((answer) => (
+          <AnswerCard key={answer.firebaseKey} answerObj={answer} onUpdate={viewQuestionAnswers} />
+        ))}
       </div>
       <div><AnswerForm /></div>
     </>
